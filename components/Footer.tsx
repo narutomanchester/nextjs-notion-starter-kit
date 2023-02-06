@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
+import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
@@ -87,6 +88,18 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
+        {config.telegram && (
+          <a
+            className={styles.github}
+            href={`https://github.com/${config.telegram}`}
+            title={`Telegram @${config.telegram}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaTelegram />
+          </a>
+        )}
+
         {config.github && (
           <a
             className={styles.github}
@@ -98,6 +111,8 @@ export const FooterImpl: React.FC = () => {
             <FaGithub />
           </a>
         )}
+
+        
 
         {config.linkedin && (
           <a
