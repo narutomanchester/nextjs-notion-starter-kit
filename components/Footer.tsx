@@ -91,7 +91,7 @@ export const FooterImpl: React.FC = () => {
         {config.telegram && (
           <a
             className={styles.github}
-            href={`https://github.com/${config.telegram}`}
+            href={`http://t.me/${config.telegram}`}
             title={`Telegram @${config.telegram}`}
             target='_blank'
             rel='noopener noreferrer'
